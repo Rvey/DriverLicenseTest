@@ -1,30 +1,38 @@
 {
-  "name": "electron-quick-start-typescript",
+  "name": "driverlicencetest",
+  "productName": "Electron",
+  "private": true,
   "version": "1.0.0",
-  "description": "A minimal Electron application written with Typescript",
+  "description": "driver licence test",
+  "author": "Rvey",
+  "license": "MIT",
+  "main": "dist/main/index.cjs",
   "scripts": {
-    "build": "tsc",
-    "watch": "tsc -w",
-    "lint": "eslint -c .eslintrc --ext .ts ./src",
-    "dev": "npm run build && electron ./dist/main.js"
+    "dev": "node scripts/watch.mjs",
+    "build": "tsc --noEmit -p packages/renderer/tsconfig.json && node scripts/build.mjs && electron-builder"
   },
-  "repository": "https://github.com/electron/electron-quick-start-typescript",
-  "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo",
-    "typescript"
-  ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "engines": {
+    "node": ">=14.17.0"
+  },
+  "dependencies": {
+  },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.33.0",
-    "@typescript-eslint/parser": "^4.33.0",
-    "electron": "^17.1.2",
-    "eslint": "^7.32.0",
-    "typescript": "^4.5.5"
+    "@types/react": "^18.0.1",
+    "@types/react-dom": "^18.0.0",
+    "@vitejs/plugin-react": "^1.3.0",
+    "electron": "18.0.3",
+    "electron-builder": "^23.0.3",
+    "execa": "^6.1.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "sass": "^1.50.0",
+    "typescript": "^4.6.3",
+    "vite": "^2.9.1",
+    "vite-plugin-esmodule": "^1.2.5",
+    "vite-plugin-optimizer": "^1.3.3"
   },
-  "dependencies": {}
+  "env": {
+    "VITE_DEV_SERVER_HOST": "127.0.0.1",
+    "VITE_DEV_SERVER_PORT": 7777
+  }
 }
