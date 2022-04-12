@@ -1,15 +1,15 @@
-import React, {useState} from 'react';
-import {useNavigate} from "react-router";
+import React, {useEffect, useRef, useState} from 'react';
 import BackBtn from "../shared/BackBtn";
 import AnswerCard from "./AnswerCard";
 import questions from "../../questions.json"
+import CountDown from "./CountDown";
 
 
 const DrivingLicence = ({subject}: any) => {
     const [QuestionNumber, setQuestionNumber] = useState(0)
     const [score, setScore] = useState(0)
     const [showResult, setShowResult] = useState(false)
-
+    const [delay, setDelay] = useState(0)
     // @ts-ignore
     let testQuestion = questions[subject]
 
@@ -28,6 +28,8 @@ const DrivingLicence = ({subject}: any) => {
     }
 
     setTimeout(() => {
+
+
         if (QuestionNumber < testQuestion.length - 1) {
             setQuestionNumber(QuestionNumber + 1)
 
@@ -35,7 +37,8 @@ const DrivingLicence = ({subject}: any) => {
             setShowResult(true)
         }
 
-    }, 4000)
+    }, 20000)
+
 
     const answers = testQuestion[QuestionNumber].answers;
     const question = testQuestion[QuestionNumber].question
@@ -44,6 +47,10 @@ const DrivingLicence = ({subject}: any) => {
     return (
         <div>
             <BackBtn/>
+            <div className="flex justify-end">
+
+            <CountDown QuestionNumber={QuestionNumber}/>
+            </div>
             {
                 !showResult &&
                 <>
