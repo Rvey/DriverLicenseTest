@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ba1e06f-2969-42bc-9254-e549a534d235" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/CountDown.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CountDown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CountDown.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/DrivingLicence.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DrivingLicence.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +80,7 @@
       <workItem from="1649687981421" duration="4509000" />
       <workItem from="1649718791443" duration="383000" />
       <workItem from="1649756314506" duration="1245000" />
-      <workItem from="1649757888738" duration="18173000" />
+      <workItem from="1649757888738" duration="19134000" />
     </task>
     <servers />
   </component>

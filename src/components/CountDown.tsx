@@ -18,7 +18,6 @@ const CountDown = ({QuestionNumber}: any) => {
         };
     }
 
-
     const startTimer = (e: any) => {
         let {total, hours, minutes, seconds}
             = getTimeRemaining(e);
@@ -47,6 +46,7 @@ const CountDown = ({QuestionNumber}: any) => {
         let deadline = new Date();
 
         deadline.setSeconds(deadline.getSeconds() + 20);
+        // deadline.setMinutes(deadline.getMinutes() + 1);
         return deadline;
     }
     useEffect(() => {

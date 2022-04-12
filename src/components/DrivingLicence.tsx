@@ -9,7 +9,7 @@ const DrivingLicence = ({subject}: any) => {
     const [QuestionNumber, setQuestionNumber] = useState(0)
     const [score, setScore] = useState(0)
     const [showResult, setShowResult] = useState(false)
-    const [delay, setDelay] = useState(0)
+    const [delay, setDelay] = useState(10000)
     // @ts-ignore
     let testQuestion = questions[subject]
 
@@ -37,7 +37,7 @@ const DrivingLicence = ({subject}: any) => {
             setShowResult(true)
         }
 
-    }, 20000)
+    }, delay)
 
 
     const answers = testQuestion[QuestionNumber].answers;
