@@ -5,62 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ba1e06f-2969-42bc-9254-e549a534d235" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/electron/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/electron/preload.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/electron/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppBar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/Icon-Electron.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CarLicence.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/LicenceTypeCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TruckLicence.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/BackBtn.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vite.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/questions.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AnswerCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/LicenceQuiz.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/electron-builder.json5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/main/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/main/vite.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/preload/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/preload/loading.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/preload/utils.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/preload/vite.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/renderer/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/renderer/public/images/node.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/renderer/src/App.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/renderer/src/assets/electron.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/renderer/src/assets/favicon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/renderer/src/assets/react.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/renderer/src/assets/vite.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/renderer/src/assets/vue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/renderer/src/global.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/renderer/src/main.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/renderer/src/styles/app.module.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/renderer/src/styles/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/renderer/src/vite-env.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/renderer/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/renderer/vite.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/paths.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/icon.icns" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/icon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/installerIcon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/uninstallerIcon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/build.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/watch.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/types.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CarLicence.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CarLicence.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TruckLicence.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TruckLicence.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +41,11 @@
     "settings.editor.selected.configurable": "editing.templates",
     "ts.external.directory.path": "C:\\Users\\rredo\\Documents\\GitHub\\DriverLicenseTest\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "JSON"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -128,7 +85,7 @@
       <workItem from="1649687981421" duration="4509000" />
       <workItem from="1649718791443" duration="383000" />
       <workItem from="1649756314506" duration="1245000" />
-      <workItem from="1649757888738" duration="3701000" />
+      <workItem from="1649757888738" duration="7616000" />
     </task>
     <servers />
   </component>
