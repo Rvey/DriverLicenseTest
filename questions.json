@@ -1,7 +1,59 @@
 {
   "carLicence": [
     {
-      "question": "What is the capital city of Switzerland?",
+      "question": "What is the capital city of car",
+      "answers": [
+        "Geneva",
+        "Zurich",
+        "Bern",
+        "Lausanne"
+      ],
+      "correctAnswer": "Bern"
+    },
+    {
+      "question": "What is the world's largest river by volume?",
+      "answers": [
+        "The Nile",
+        "The Amazon",
+        "The Congo",
+        "The Yangtze"
+      ],
+      "correctAnswer": "The Amazon"
+    },
+    {
+      "question": "What is the most populous city in the world?",
+      "answers": [
+        "Tokyo",
+        "Beijing",
+        "Mumbai",
+        "New York"
+      ],
+      "correctAnswer": "Tokyo"
+    },
+    {
+      "question": "How large an area does Asia cover in km³?",
+      "answers": [
+        "44.58 million",
+        "52.64 million",
+        "41.59 million",
+        "48.41 million"
+      ],
+      "correctAnswer": "44.58 million"
+    },
+    {
+      "question": "Which of these is not one of the 7 wonders of the ancient world?",
+      "answers": [
+        "The Great Pyramid of Giza",
+        "The Statue of Zeus at Olympia",
+        "The Parthenon",
+        "The Colossus of Rhodes"
+      ],
+      "correctAnswer": "The Parthenon"
+    }
+  ],
+  "truckLicence": [
+    {
+      "question": "What is the capital city of truck",
       "answers": [
         "Geneva",
         "Zurich",

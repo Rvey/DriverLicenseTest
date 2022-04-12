@@ -3,8 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import CarLicence from "./components/CarLicence";
-import TruckLicence from "./components/TruckLicence";
+import DrivingLicence from "./components/DrivingLicence";
 
 ReactDOM.render(
     <React.StrictMode>
@@ -12,8 +11,8 @@ ReactDOM.render(
 
             <Routes>
                 <Route path="/" element={<App/>}/>
-                <Route path="/carLicence" element={<CarLicence/>}/>
-                <Route path="/truckLicence" element={<TruckLicence/>}/>
+                <Route path="/carLicence" element={<DrivingLicence subject="carLicence" />}/>
+                <Route path="/truckLicence" element={<DrivingLicence subject="truckLicence"/>}/>
 
             </Routes>
         </BrowserRouter>
