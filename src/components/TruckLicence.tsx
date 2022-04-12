@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {useNavigate} from "react-router";
 import BackBtn from "../shared/BackBtn";
 import AnswerCard from "./AnswerCard";
@@ -16,7 +16,17 @@ const questions =  [
         correctAnswer: "Bern"
     },
     {
-        question: "What is the world's largest river by volume?",
+        question: "What is the capital city of Switzerland?",
+        answers: [
+            "Tokyo",
+            "Beijing",
+            "Mumbai",
+            "New York"
+        ],
+        correctAnswer: "Beijing"
+    },
+    {
+        question: "What is the most populous city in the world?",
         answers: [
             "The Nile",
             "The Amazon",
@@ -24,16 +34,6 @@ const questions =  [
             "The Yangtze"
         ],
         correctAnswer: "The Amazon"
-    },
-    {
-        question: "What is the most populous city in the world?",
-        answer: [
-            "Tokyo",
-            "Beijing",
-            "Mumbai",
-            "New York"
-        ],
-        correctAnswer: "Tokyo"
     },
     {
         question: "How large an area does Asia cover in km³?",
@@ -45,35 +45,46 @@ const questions =  [
         ],
         correctAnswer: "44.58 million"
     },
-    {
-        question: "Which of these is not one of the 7 wonders of the ancient world?",
-        answers: [
-            "The Great Pyramid of Giza",
-            "The Statue of Zeus at Olympia",
-            "The Parthenon",
-            "The Colossus of Rhodes"
-        ],
-        correctAnswer: "The Parthenon"
-    }
+
 ]
 const TruckLicence = () => {
-    const navigate = useNavigate()
-    const handleClick = (answer : any) => {
-        const correctAnswer = questions[0].correctAnswer
-        console.log(correctAnswer , answer)
-        // @ts-ignore
-        answer == correctAnswer ? console.log("correct") : console.log('false')
+    const [QuestionNumber , setQuestionNumber] = useState(0)
+    const [score , setScore] = useState(0)
+    const [showResult , setShowResult] = useState(false)
+   function handleClick (answer : any)  {
+        const correctAnswer = questions[QuestionNumber].correctAnswer
+        if (answer === correctAnswer) {
+            console.log("correct")
+            setScore(score + 1)
+        }
+
+        if (QuestionNumber < questions.length - 1) {
+            setQuestionNumber(QuestionNumber + 1)
+
+        }else {
+            setShowResult(true)
+        }
+
     }
     // @ts-ignore
-    const answers = questions[0].answers;
-    const question = questions[0].question
-    console.log(questions)
+    const answers = questions[QuestionNumber].answers;
+    const question = questions[QuestionNumber].question
+
     return (
         <div>
             <BackBtn/>
             <h1>{question}</h1>
-            <AnswerCard answers={answers} onClick={handleClick}/>
+            {
+                !showResult &&
 
+                 <AnswerCard answers={answers} onClick={handleClick}/>
+            }
+            {
+                showResult ?
+                    <h1>Your score is {score}</h1>
+                    :
+                    <h1>{QuestionNumber + 1}/{questions.length}</h1>
+            }
         </div>
     );
 };
