@@ -3,19 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import DrivingLicence from "./components/DrivingLicence";
+import DLQuestions from "./components/DLQuestions";
+import Login from "./pages/Login";
 
 ReactDOM.render(
     <React.StrictMode>
-        <BrowserRouter>
-
-            <Routes>
-                <Route path="/" element={<App/>}/>
-                <Route path="/carLicence" element={<DrivingLicence subject="carLicence" />}/>
-                <Route path="/truckLicence" element={<DrivingLicence subject="truckLicence"/>}/>
-
-            </Routes>
-        </BrowserRouter>
+        <App/>
     </React.StrictMode>,
     document.getElementById('root')
 );

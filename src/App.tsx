@@ -1,16 +1,30 @@
 import React, {useEffect, useState} from 'react';
 import AppBar from './AppBar';
-import LicenceTypeCard from "./components/LicenceTypeCard";
-import svg from './logo.svg'
+import LicenceType from "./pages/LicenceSelector";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import DLQuestions from "./components/DLQuestions";
+import Login from "./pages/Login";
+import Candidates from "./components/Candidates";
 
 function App() {
 
     return (
-        <div className="bg-gray-50 h-screen flex justify-center">
-            <LicenceTypeCard licenceType="Car licence" imgSrc={svg} url="/carLicence"/>
-            <LicenceTypeCard licenceType="Truck licence" imgSrc={svg} url="/truckLicence"/>
-        </div>
-    );
+        <>
+
+            <BrowserRouter>
+
+                <Routes>
+                    <Route path="/" element={<LicenceType/>}/>
+                    <Route path="/carLicence" element={<DLQuestions subject="carLicence"/>}/>
+                    <Route path="/truckLicence" element={<DLQuestions subject="truckLicence"/>}/>
+                    <Route path="/Login" element={<Login/>}/>
+                    <Route path="/candidates" element={<Candidates/>}/>
+
+                </Routes>
+            </BrowserRouter>
+        </>
+    )
+
 }
 
 export default App;

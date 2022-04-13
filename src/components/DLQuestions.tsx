@@ -5,11 +5,11 @@ import questions from "../../questions.json"
 import CountDown from "./CountDown";
 
 
-const DrivingLicence = ({subject}: any) => {
+const DLQuestions = ({subject}: any) => {
     const [QuestionNumber, setQuestionNumber] = useState(0)
     const [score, setScore] = useState(0)
     const [showResult, setShowResult] = useState(false)
-    const [delay, setDelay] = useState(10000)
+    const [delay, setDelay] = useState(5)
     // @ts-ignore
     let testQuestion = questions[subject]
 
@@ -37,19 +37,18 @@ const DrivingLicence = ({subject}: any) => {
             setShowResult(true)
         }
 
-    }, delay)
+    }, `${delay}000`)
 
 
     const answers = testQuestion[QuestionNumber].answers;
     const question = testQuestion[QuestionNumber].question
 
-    console.log(testQuestion.length, QuestionNumber)
     return (
         <div>
             <BackBtn/>
             <div className="flex justify-end">
 
-            <CountDown QuestionNumber={QuestionNumber}/>
+            <CountDown QuestionNumber={QuestionNumber} delay={delay}/>
             </div>
             {
                 !showResult &&
@@ -69,4 +68,4 @@ const DrivingLicence = ({subject}: any) => {
     );
 };
 
-export default DrivingLicence;
+export default DLQuestions;

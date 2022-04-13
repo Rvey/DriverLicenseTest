@@ -1,31 +1,29 @@
 import React, {useEffect, useRef, useState} from 'react';
 
-const CountDown = ({QuestionNumber}: any) => {
+const CountDown = ({QuestionNumber  , delay}: any) => {
     const Ref = useRef(null);
 
     // The state for our timer
-    const [timer, setTimer] = useState('00:00:00');
+    const [timer, setTimer] = useState(0);
 
 
     const getTimeRemaining = (e: string) => {
         // @ts-ignore
         const total = Date.parse(e) - Date.parse(new Date());
         const seconds = Math.floor((total / 1000) % 60);
-        const minutes = Math.floor((total / 1000 / 60) % 60);
-        const hours = Math.floor((total / 1000 * 60 * 60) % 24);
+
         return {
-            total, hours, minutes, seconds
+            total,seconds
         };
     }
 
     const startTimer = (e: any) => {
-        let {total, hours, minutes, seconds}
+        let {total,seconds}
             = getTimeRemaining(e);
         if (total >= 0) {
             setTimer(
-                (hours > 9 ? hours : '0' + hours) + ':' +
-                (minutes > 9 ? minutes : '0' + minutes) + ':'
-                + (seconds > 9 ? seconds : '0' + seconds)
+
+                 (seconds > 9 ? seconds : '0' + seconds)
             )
         }
     }
@@ -33,7 +31,7 @@ const CountDown = ({QuestionNumber}: any) => {
 
     const clearTimer = (e: Date | undefined) => {
 
-        setTimer('00:00:20');
+        setTimer(delay);
 
         if (Ref.current) clearInterval(Ref.current);
         // @ts-ignore
@@ -45,7 +43,7 @@ const CountDown = ({QuestionNumber}: any) => {
     const getDeadTime = () => {
         let deadline = new Date();
 
-        deadline.setSeconds(deadline.getSeconds() + 20);
+        deadline.setSeconds(deadline.getSeconds() + delay);
         // deadline.setMinutes(deadline.getMinutes() + 1);
         return deadline;
     }
@@ -55,7 +53,7 @@ const CountDown = ({QuestionNumber}: any) => {
 
     return (
         <div>
-            {timer}
+            time remain : {timer} s
         </div>
     );
 };
