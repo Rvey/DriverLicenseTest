@@ -9,7 +9,7 @@ const DLQuestions = ({subject}: any) => {
     const [QuestionNumber, setQuestionNumber] = useState(0)
     const [score, setScore] = useState(0)
     const [showResult, setShowResult] = useState(false)
-    const [delay, setDelay] = useState(5)
+    const [delay, setDelay] = useState(30)
     // @ts-ignore
     let testQuestion = questions[subject]
 
@@ -17,6 +17,7 @@ const DLQuestions = ({subject}: any) => {
         const correctAnswer = testQuestion[QuestionNumber].correctAnswer
         if (answer === correctAnswer) {
             setScore(score + 1)
+            console.log('correct')
         }
 
         if (QuestionNumber < testQuestion.length - 1) {
@@ -48,14 +49,14 @@ const DLQuestions = ({subject}: any) => {
             <BackBtn/>
             <div className="flex justify-end">
 
-            <CountDown QuestionNumber={QuestionNumber} delay={delay}/>
+                <CountDown QuestionNumber={QuestionNumber} delay={delay}/>
             </div>
             {
                 !showResult &&
                 <>
                     <h1>{question}</h1>
 
-                    <AnswerCard answers={answers} onClick={handleClick}/>
+                    <AnswerCard answers={answers} handleClick={handleClick}/>
                 </>
             }
             {

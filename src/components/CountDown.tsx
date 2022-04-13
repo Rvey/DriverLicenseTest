@@ -1,6 +1,6 @@
 import React, {useEffect, useRef, useState} from 'react';
 
-const CountDown = ({QuestionNumber  , delay}: any) => {
+const CountDown = ({QuestionNumber, delay}: any) => {
     const Ref = useRef(null);
 
     // The state for our timer
@@ -13,17 +13,16 @@ const CountDown = ({QuestionNumber  , delay}: any) => {
         const seconds = Math.floor((total / 1000) % 60);
 
         return {
-            total,seconds
+            total, seconds
         };
     }
 
     const startTimer = (e: any) => {
-        let {total,seconds}
+        let {total, seconds}
             = getTimeRemaining(e);
         if (total >= 0) {
             setTimer(
-
-                 (seconds > 9 ? seconds : '0' + seconds)
+                (seconds > 9 ? seconds : '0' + seconds)
             )
         }
     }
