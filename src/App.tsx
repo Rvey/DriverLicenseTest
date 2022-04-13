@@ -10,7 +10,7 @@ import UseFetch from "./Hook/useFetch";
 function App() {
 
 
-    const {data} = UseFetch()
+    const {data} = UseFetch("https://driving-licence-app.herokuapp.com/question/all")
     return (
         <HashRouter>
             <Routes>

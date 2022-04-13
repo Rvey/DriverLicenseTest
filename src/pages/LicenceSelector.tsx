@@ -4,12 +4,16 @@ import svg from '../logo.svg';
 
 const LicenceType: React.VFC = () => {
 
-  return (
-    <div className="bg-gray-50 h-screen flex justify-center">
-      <LicenceTypeCard licenceType="Car licence" imgSrc={svg} url="/carLicence" />
-      <LicenceTypeCard licenceType="Truck licence" imgSrc={svg} url="/truckLicence" />
-    </div>
-  );
+    return (
+        <div className="flex justify-center flex-col">
+
+            <div className="flex">
+                <LicenceTypeCard licenceType="Car licence" imgSrc={svg} url="/carLicence"/>
+                <LicenceTypeCard licenceType="Truck licence" imgSrc={svg} url="/truckLicence"/>
+                <LicenceTypeCard licenceType="adminLogin" imgSrc={svg} url="/login"/>
+            </div>
+        </div>
+    );
 };
 
 export default LicenceType;

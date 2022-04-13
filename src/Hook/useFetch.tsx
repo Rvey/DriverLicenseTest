@@ -1,11 +1,11 @@
 import React, {useEffect} from "react";
 import {useState} from "react";
 
-const UseFetch = () => {
+const UseFetch = (url: RequestInfo) => {
   const [data, setData] = useState<any>();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
-  const [url, setUrl] = useState("https://driving-licence-app.herokuapp.com/question/all");
+  // const [url, setUrl] = useState("https://driving-licence-app.herokuapp.com/question/all");
 
   const fetchData = async () => {
     setLoading(true);

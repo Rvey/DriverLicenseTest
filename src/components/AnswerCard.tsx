@@ -13,7 +13,7 @@ function AnswerCard(props: any) {
             }}
           >
             <input type="radio" name="answer" value={answer} className="ml-5 dark:bg-gray-800" />
-            <label className="text-gray-700 dark:text-gray-400 text-lg ml-4">{answer}</label>
+            <label className={`text-gray-400 text-lg ml-4`} >{answer}</label>
           </div>
         </Fragment>
       ))}

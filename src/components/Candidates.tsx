@@ -1,7 +1,9 @@
 import React from 'react';
+import UseFetch from "../Hook/useFetch";
 
 function Candidates() {
-  const data = []
+  const {data} = UseFetch('https://driving-licence-app.herokuapp.com/user/all');
+  console.log(data)
   return (
     <div className="inline-block py-2 min-w-full sm:px-6 lg:px-8">
       <div className="overflow-hidden shadow-md sm:rounded-lg">

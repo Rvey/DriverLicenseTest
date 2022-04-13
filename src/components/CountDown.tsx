@@ -43,7 +43,11 @@ function CountDown({ QuestionNumber, delay }: any) {
     return deadline;
   };
   useEffect(() => {
-    clearTimer(getDeadTime());
+    let abortController = new AbortController();
+    clearTimer(getDeadTime())
+    return () => {
+      abortController.abort();
+    };
   }, [QuestionNumber]);
 
   return <div>time remain : {timer} s</div>;
