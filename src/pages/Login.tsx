@@ -20,7 +20,6 @@ function Login() {
         <div className="h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 bg-ehe-100">
             <div className="max-w-md w-full space-y-8">
                 <div>
-                    {/* <img className="mx-auto h-12 w-auto" src="" alt="logo" /> */}
                     <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900 font-poppins">
                         Sign in to your account
                     </h2>
@@ -64,13 +63,20 @@ function Login() {
                         <div className="text-sm"/>
                     </div>
 
-                    <div>
+                    <div className="space-y-3">
                         <button
                             type="submit"
                             onClick={handlelogin}
                             className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                         >
                             Login
+                        </button>
+                        <button
+                            type="submit"
+                            onClick={() => navigate('/')}
+                            className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-gray-700 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:bg-gray-700"
+                        >
+                            Back
                         </button>
                     </div>
                 </form>
