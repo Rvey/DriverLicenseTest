@@ -5,8 +5,8 @@ import { join } from 'path';
 import { BrowserWindow, app, ipcMain, IpcMainEvent } from 'electron';
 import isDev from 'electron-is-dev';
 
-const height = 600;
-const width = 800;
+const height = 800;
+const width = 1200;
 
 function createWindow() {
   // Create the browser window.

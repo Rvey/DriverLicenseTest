@@ -1,17 +1,26 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import BackBtn from '../shared/BackBtn';
 import AnswerCard from './AnswerCard';
-import questions from '../../questions.json';
 import CountDown from './CountDown';
+import UseFetch from "../Hook/useFetch";
 
-function DLQuestions({ subject }: any) {
+function DLQuestions({ subject , data  }: any) {
   const [QuestionNumber, setQuestionNumber] = useState(0);
   const [score, setScore] = useState(0);
   const [showResult, setShowResult] = useState(false);
   const [delay, setDelay] = useState(30);
+  // const [testQuestion , setData] = useState([]);
+
+
+  // console.log(data && data?.filter((item:any) => item.vehicletype === 'truck'))
+  // console.log( testQuestion && testQuestion.questions?.filter((item:any) => item.vehicletype === 'truck'))
+  // const testQuestion = data?.questions;
+
+  //@ts-ignore
 
   // @ts-ignore
-  const testQuestion = questions[subject];
+  const testQuestion = data?.filter((item:any) => item.vehicletype === subject);
+
 
   const handleClick = (answer: any) => {
     const { correctAnswer } = testQuestion[QuestionNumber];
@@ -36,8 +45,12 @@ function DLQuestions({ subject }: any) {
     }
   }, 30000);
 
-  const { answers } = testQuestion[QuestionNumber];
-  const { question } = testQuestion[QuestionNumber];
+  // @ts-ignore
+  const  question = testQuestion[QuestionNumber];
+  const answers = question.answer;
+   // @ts-ignore
+  console.log(testQuestion)
+
 
   return (
     <div>
@@ -45,9 +58,9 @@ function DLQuestions({ subject }: any) {
       <div className="flex justify-end">
         <CountDown QuestionNumber={QuestionNumber} delay={delay} />
       </div>
-      {!showResult && (
+      {!showResult && question && (
         <>
-          <h1>{question}</h1>
+          <h1>{question.question}</h1>
 
           <AnswerCard answers={answers} handleClick={handleClick} />
         </>

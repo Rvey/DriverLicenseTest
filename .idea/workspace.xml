@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ba1e06f-2969-42bc-9254-e549a534d235" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Hook/useFetch.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/electron/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/electron/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Candidates.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Candidates.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CountDown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CountDown.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/DLQuestions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DLQuestions.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/LicenceSelector.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/LicenceSelector.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,21 +33,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/rredo/Documents/GitHub/DriverLicenseTest",
-    "nodejs_package_manager_path": "yarn",
-    "settings.editor.selected.configurable": "editing.templates",
-    "ts.external.directory.path": "C:\\Users\\rredo\\Documents\\GitHub\\DriverLicenseTest\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/rredo/Documents/GitHub/DriverLicenseTest&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\rredo\\Documents\\GitHub\\DriverLicenseTest\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "JSON"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;JSON&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\rredo\Documents\GitHub\DriverLicenseTest" />
@@ -125,7 +129,7 @@
       <workItem from="1649687981421" duration="4509000" />
       <workItem from="1649718791443" duration="383000" />
       <workItem from="1649756314506" duration="1245000" />
-      <workItem from="1649757888738" duration="29712000" />
+      <workItem from="1649757888738" duration="36165000" />
     </task>
     <servers />
   </component>

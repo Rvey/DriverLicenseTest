@@ -21,7 +21,7 @@ function CountDown({ QuestionNumber, delay }: any) {
     const { total, seconds } = getTimeRemaining(e);
     if (total >= 0) {
       // @ts-ignore
-      setTimer(seconds > 9 ? seconds : `0${seconds}`);
+      setTimer( seconds > 9 ? seconds : `0${seconds}`);
     }
   };
 

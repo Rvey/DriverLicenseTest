@@ -1,6 +1,7 @@
 import React from 'react';
 
 function Candidates() {
+  const data = []
   return (
     <div className="inline-block py-2 min-w-full sm:px-6 lg:px-8">
       <div className="overflow-hidden shadow-md sm:rounded-lg">
@@ -28,6 +29,7 @@ function Candidates() {
               <th scope="col" className="relative py-3 px-6">
                 <span className="sr-only">Edit</span>
               </th>
+
             </tr>
           </thead>
           <tbody />
