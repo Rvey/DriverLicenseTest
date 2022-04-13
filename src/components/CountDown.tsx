@@ -1,60 +1,52 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
-const CountDown = ({QuestionNumber, delay}: any) => {
-    const Ref = useRef(null);
+function CountDown({ QuestionNumber, delay }: any) {
+  const Ref = useRef(null);
 
-    // The state for our timer
-    const [timer, setTimer] = useState(0);
+  // The state for our timer
+  const [timer, setTimer] = useState(0);
 
+  const getTimeRemaining = (e: string) => {
+    // @ts-ignore
+    const total = Date.parse(e) - Date.parse(new Date());
+    const seconds = Math.floor((total / 1000) % 60);
 
-    const getTimeRemaining = (e: string) => {
-        // @ts-ignore
-        const total = Date.parse(e) - Date.parse(new Date());
-        const seconds = Math.floor((total / 1000) % 60);
+    return {
+      total,
+      seconds
+    };
+  };
 
-        return {
-            total, seconds
-        };
+  const startTimer = (e: any) => {
+    const { total, seconds } = getTimeRemaining(e);
+    if (total >= 0) {
+      // @ts-ignore
+      setTimer(seconds > 9 ? seconds : `0${seconds}`);
     }
+  };
 
-    const startTimer = (e: any) => {
-        let {total, seconds}
-            = getTimeRemaining(e);
-        if (total >= 0) {
-            setTimer(
-                (seconds > 9 ? seconds : '0' + seconds)
-            )
-        }
-    }
+  const clearTimer = (e: Date | undefined) => {
+    setTimer(delay);
 
+    if (Ref.current) clearInterval(Ref.current);
+    // @ts-ignore
+    Ref.current = setInterval(() => {
+      startTimer(e);
+    }, 1000);
+  };
 
-    const clearTimer = (e: Date | undefined) => {
+  const getDeadTime = () => {
+    const deadline = new Date();
 
-        setTimer(delay);
+    deadline.setSeconds(deadline.getSeconds() + delay);
+    // deadline.setMinutes(deadline.getMinutes() + 1);
+    return deadline;
+  };
+  useEffect(() => {
+    clearTimer(getDeadTime());
+  }, [QuestionNumber]);
 
-        if (Ref.current) clearInterval(Ref.current);
-        // @ts-ignore
-        Ref.current = setInterval(() => {
-            startTimer(e);
-        }, 1000);
-    }
-
-    const getDeadTime = () => {
-        let deadline = new Date();
-
-        deadline.setSeconds(deadline.getSeconds() + delay);
-        // deadline.setMinutes(deadline.getMinutes() + 1);
-        return deadline;
-    }
-    useEffect(() => {
-        clearTimer(getDeadTime());
-    }, [QuestionNumber]);
-
-    return (
-        <div>
-            time remain : {timer} s
-        </div>
-    );
-};
+  return <div>time remain : {timer} s</div>;
+}
 
 export default CountDown;

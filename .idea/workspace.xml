@@ -6,9 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="8ba1e06f-2969-42bc-9254-e549a534d235" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/electron/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/electron/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/AnswerCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AnswerCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Candidates.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Candidates.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CountDown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CountDown.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/DLQuestions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DLQuestions.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LicenceTypeCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LicenceTypeCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ManageQuestions.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ManageQuestions.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/LicenceSelector.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/LicenceSelector.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/BackBtn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/BackBtn.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +63,27 @@
       <recent name="C:\Users\rredo\Documents\GitHub\DriverLicenseTest\src\electron" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.lint:fix">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="clean" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="clean" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -64,8 +94,32 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="dist" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dist" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="lint:fix" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="lint:fix" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.lint:fix" />
+        <item itemvalue="npm.clean" />
+        <item itemvalue="npm.dist" />
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
@@ -81,7 +135,7 @@
       <workItem from="1649687981421" duration="4509000" />
       <workItem from="1649718791443" duration="383000" />
       <workItem from="1649756314506" duration="1245000" />
-      <workItem from="1649757888738" duration="24996000" />
+      <workItem from="1649757888738" duration="27543000" />
     </task>
     <servers />
   </component>

@@ -75,7 +75,6 @@ app.on('window-all-closed', () => {
 // code. You can also put them in separate files and require them here.
 
 // listen the channel `message` and resend the received message to the renderer process
-ipcMain.on('message', (event: IpcMainEvent, message: any) => {
-  console.log(message);
+ipcMain.on('message', (event: IpcMainEvent) => {
   setTimeout(() => event.sender.send('message', 'hi from electron'), 500);
 });
