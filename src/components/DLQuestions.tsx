@@ -9,6 +9,7 @@ function DLQuestions({ subject }: any) {
   const [score, setScore] = useState(0);
   const [showResult, setShowResult] = useState(false);
   const [delay, setDelay] = useState(30);
+
   // @ts-ignore
   const testQuestion = questions[subject];
 

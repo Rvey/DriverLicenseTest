@@ -14,10 +14,10 @@ function createWindow() {
     width,
     height,
     //  change to false to use AppBar
-    // frame: true,
-    // show: false,
-    // resizable: true,
-    // fullscreenable: true,
+    frame: true,
+    show: true,
+    resizable: true,
+    fullscreenable: true,
     webPreferences: {
       preload: join(__dirname, 'preload.js')
     }

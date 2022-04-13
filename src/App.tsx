@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import React from 'react';
 import AppBar from './AppBar';
 import LicenceType from './pages/LicenceSelector';
@@ -8,7 +8,7 @@ import Candidates from './components/Candidates';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<LicenceType />} />
         <Route path="/carLicence" element={<DLQuestions subject="carLicence" />} />
@@ -16,7 +16,7 @@ function App() {
         <Route path="/Login" element={<Login />} />
         <Route path="/candidates" element={<Candidates />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
