@@ -66,6 +66,7 @@ function DLQuestions({subject, data}: any) {
             {
                 showResult &&
                 <CandidateInfo score={score}/>
+
             }
 
 
