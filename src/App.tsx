@@ -15,6 +15,7 @@ function App() {
         <HashRouter>
             <Routes>
                 <Route path="/" element={<LicenceType/>}/>
+
                 {data &&
                     <>
                         <Route path="/carLicence" element={<DLQuestions subject="car" data={data.questions}/>}/>

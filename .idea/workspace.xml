@@ -6,11 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="8ba1e06f-2969-42bc-9254-e549a534d235" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/electron/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/electron/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AnswerCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AnswerCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CountDown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CountDown.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DLQuestions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DLQuestions.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/BackBtn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/BackBtn.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/LicenceSelector.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/LicenceSelector.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,12 +56,12 @@
       <recent name="C:\Users\rredo\Documents\GitHub\DriverLicenseTest\src\electron" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.lint:fix">
-    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="npm.build:publish">
+    <configuration name="build:publish" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="build" />
+        <script value="build:publish" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -108,11 +109,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build:publish" />
         <item itemvalue="npm.lint:fix" />
         <item itemvalue="npm.dist" />
         <item itemvalue="npm.dev" />
         <item itemvalue="npm.clean" />
-        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -127,7 +128,7 @@
       <workItem from="1649687981421" duration="4509000" />
       <workItem from="1649718791443" duration="383000" />
       <workItem from="1649756314506" duration="1245000" />
-      <workItem from="1649757888738" duration="45406000" />
+      <workItem from="1649757888738" duration="48979000" />
     </task>
     <servers />
   </component>

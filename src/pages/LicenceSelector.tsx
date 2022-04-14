@@ -10,7 +10,7 @@ const LicenceType: React.VFC = () => {
             <div className="flex justify-center items-center" >
                 <LicenceTypeCard licenceType="Test Car licence" imgSrc={svg} url="/carLicence"/>
                 <LicenceTypeCard licenceType="Test Truck licence" imgSrc={svg} url="/truckLicence"/>
-                <LicenceTypeCard licenceType="adminLogin" imgSrc={svg} url="/login"/>
+                <LicenceTypeCard licenceType="Candidate dashboard" imgSrc={svg} url="/login"/>
             </div>
         </div>
     );
